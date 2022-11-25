@@ -1,0 +1,15 @@
+D:\c_sharp\notes\bin\Debug\net6.0\notes.exe
+D:\c_sharp\notes\bin\Debug\net6.0\notes.deps.json
+D:\c_sharp\notes\bin\Debug\net6.0\notes.runtimeconfig.json
+D:\c_sharp\notes\bin\Debug\net6.0\notes.dll
+D:\c_sharp\notes\bin\Debug\net6.0\notes.pdb
+D:\c_sharp\notes\obj\Debug\net6.0\notes.csproj.AssemblyReference.cache
+D:\c_sharp\notes\obj\Debug\net6.0\notes.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\notes\obj\Debug\net6.0\notes.AssemblyInfoInputs.cache
+D:\c_sharp\notes\obj\Debug\net6.0\notes.AssemblyInfo.cs
+D:\c_sharp\notes\obj\Debug\net6.0\notes.csproj.CoreCompileInputs.cache
+D:\c_sharp\notes\obj\Debug\net6.0\notes.dll
+D:\c_sharp\notes\obj\Debug\net6.0\refint\notes.dll
+D:\c_sharp\notes\obj\Debug\net6.0\notes.pdb
+D:\c_sharp\notes\obj\Debug\net6.0\notes.genruntimeconfig.cache
+D:\c_sharp\notes\obj\Debug\net6.0\ref\notes.dll
