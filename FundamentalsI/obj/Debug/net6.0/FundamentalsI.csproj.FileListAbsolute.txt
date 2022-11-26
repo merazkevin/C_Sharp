@@ -1,0 +1,15 @@
+D:\c_sharp\FundamentalsI\bin\Debug\net6.0\FundamentalsI.exe
+D:\c_sharp\FundamentalsI\bin\Debug\net6.0\FundamentalsI.deps.json
+D:\c_sharp\FundamentalsI\bin\Debug\net6.0\FundamentalsI.runtimeconfig.json
+D:\c_sharp\FundamentalsI\bin\Debug\net6.0\FundamentalsI.dll
+D:\c_sharp\FundamentalsI\bin\Debug\net6.0\FundamentalsI.pdb
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.csproj.AssemblyReference.cache
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.AssemblyInfoInputs.cache
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.AssemblyInfo.cs
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.csproj.CoreCompileInputs.cache
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.dll
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\refint\FundamentalsI.dll
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.pdb
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\FundamentalsI.genruntimeconfig.cache
+D:\c_sharp\FundamentalsI\obj\Debug\net6.0\ref\FundamentalsI.dll
