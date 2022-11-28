@@ -1,24 +1,75 @@
 ﻿// Challenge 1
-//bool amProgrammer = "true"; //<=== wrong data type ===>
-// <=== Correction ===> 
-string amProgrammer = "true";
 
-//int Age = 27.9; //<=== wrong data type ===>
-// <=== Correction ===> 
-Double Age = 27.9;
+ //bool amProgrammer = "true"; //<=== wrong data type ===>
+ // <=== Correction ===> 
+// string amProgrammer = "true";
 
-List<string> Names = new List<string>();
-Names.Add = "Monica";
-Dictionary<string, string> MyDictionary = new Dictionary<string, string>();
-MyDictionary.Add("Hello", "0");
-//MyDictionary.Add("Hi there", 0);//<=== wrong data type ===>
-// <=== Correction ===> 
-MyDictionary.Add("Hi there", "0");// missing -> (""). 
-// This is a tricky one! Hint: look up what a char is in C#
-//string MyName = 'MyName'; // missing -> ("").
-// <=== Correction ===> 
-string MyName = "MyName";
+ //int Age = 27.9; //<=== wrong data type ===>
+ // <=== Correction ===> 
+// Double Age = 27.9;
 
-Console.WriteLine(amProgrammer);
-Console.WriteLine(Age);
-Console.WriteLine(MyName);
+// List<string> Names = new List<string>();
+ // <=== Correction ===> 
+// Names.Add("Monica");//<=== Missing .Add method and parenthesis
+
+// Dictionary<string, string> MyDictionary = new Dictionary<string, string>();
+// MyDictionary.Add("Hello", "0");
+
+ //MyDictionary.Add("Hi there", 0);//<=== wrong data type ===>
+ // <=== Correction ===> 
+// MyDictionary.Add("Hi there", "0");// missing -> (""). 
+ // This is a tricky one! Hint: look up what a char is in C#
+ //string MyName = 'MyName'; // missing -> ("").
+ // <=== Correction ===> 
+// string MyName = "MyName";
+
+// Console.WriteLine(amProgrammer);
+// Console.WriteLine(Age);
+// Console.WriteLine(MyName);
+// Console.WriteLine(Names[0]);
+
+// Challenge 2
+// List<int> Numbers = new List<int>() {2,3,6,7,1,5};
+// for(int i = 0; i< Numbers.Count; i++)
+// {
+//     Console.WriteLine(Numbers[i]);
+// }
+
+// Challenge 3
+// List<int> MoreNumbers = new List<int>() {12,7,10,-3,9};
+// foreach(int i in MoreNumbers)
+// {
+//     Console.WriteLine(i);
+// }
+
+// Challenge 4
+// List<int> EvenMoreNumbers = new List<int> {3,6,9,12,14};
+// foreach(int num in EvenMoreNumbers)
+// {
+//     if(num % 3 == 0)
+//     {
+//         int newNum = num;
+//         newNum = 0;
+//         Console.WriteLine(newNum);
+//     }
+// }
+
+// Challenge 5
+// What can we learn from this error message?
+// string MyString = "superduberawesome";
+// MyString[7] = "p";
+// Console.WriteLine(MyString[7]);
+// you cant reassign strings indexes.
+
+// Challenge 6
+// Hint: some bugs don't come with error messages
+Random rand = new Random();
+int randomNum = rand.Next(12);// missing the starting number and "else" codeblock
+if(randomNum == 12)
+{
+    Console.WriteLine("Hello");
+}
+else{
+    Console.WriteLine("not 12");
+    Console.WriteLine($"RandomNum is ==> {randomNum}");
+}
