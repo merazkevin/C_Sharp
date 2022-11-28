@@ -1,0 +1,15 @@
+D:\c_sharp\FundamentalsII\bin\Debug\net6.0\FundamentalsII.exe
+D:\c_sharp\FundamentalsII\bin\Debug\net6.0\FundamentalsII.deps.json
+D:\c_sharp\FundamentalsII\bin\Debug\net6.0\FundamentalsII.runtimeconfig.json
+D:\c_sharp\FundamentalsII\bin\Debug\net6.0\FundamentalsII.dll
+D:\c_sharp\FundamentalsII\bin\Debug\net6.0\FundamentalsII.pdb
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.csproj.AssemblyReference.cache
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.AssemblyInfoInputs.cache
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.AssemblyInfo.cs
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.csproj.CoreCompileInputs.cache
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.dll
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\refint\FundamentalsII.dll
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.pdb
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\FundamentalsII.genruntimeconfig.cache
+D:\c_sharp\FundamentalsII\obj\Debug\net6.0\ref\FundamentalsII.dll
