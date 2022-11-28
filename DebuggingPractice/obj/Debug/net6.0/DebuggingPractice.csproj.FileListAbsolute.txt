@@ -1,0 +1,15 @@
+D:\c_sharp\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.exe
+D:\c_sharp\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.deps.json
+D:\c_sharp\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.runtimeconfig.json
+D:\c_sharp\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.dll
+D:\c_sharp\DebuggingPractice\bin\Debug\net6.0\DebuggingPractice.pdb
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.csproj.AssemblyReference.cache
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.AssemblyInfoInputs.cache
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.AssemblyInfo.cs
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.csproj.CoreCompileInputs.cache
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.dll
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\refint\DebuggingPractice.dll
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.pdb
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\DebuggingPractice.genruntimeconfig.cache
+D:\c_sharp\DebuggingPractice\obj\Debug\net6.0\ref\DebuggingPractice.dll
