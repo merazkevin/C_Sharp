@@ -103,3 +103,12 @@
 // {
 //     Console.WriteLine(MyNums[i]);
 // }
+
+static void SayHello(string firstName = "buddy")
+{
+    Console.WriteLine($"Hey, {firstName}");
+}
+// We can call it without providing any arguments and the default value will be used...
+SayHello();
+// ...or we can call it with an argument and that argument's value will be used
+SayHello("Yoda");

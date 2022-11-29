@@ -45,9 +45,7 @@
 
 // <=== For loop ===>
 // for(int ii=1;ii<=100; ii++){
-// if(ii%3==0 && ii%5==0){
-//     ii++;
-//     }
+// if(ii%3==0 && ii%5==0){}
 //     else if(ii%3==0 || ii%5==0){
 //         Console.WriteLine("this is ii div by 3 Or 5");
 //         Console.WriteLine(ii);
