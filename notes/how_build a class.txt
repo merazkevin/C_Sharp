@@ -1,0 +1,11 @@
+how to build a class?
+
+1-difined class
+ class(lowercase 'c') classVariableName
+2-fields(what does it look like? characteristic)
+    dataType color
+    dataType outdoor
+    dataType material
+3- make constructor
+Furnature(dataType r,dataType t, dataType f)
+4- make methods(what can our object do ) 

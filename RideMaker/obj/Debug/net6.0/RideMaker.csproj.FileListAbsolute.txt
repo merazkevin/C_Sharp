@@ -1,0 +1,15 @@
+D:\c_sharp\RideMaker\bin\Debug\net6.0\RideMaker.exe
+D:\c_sharp\RideMaker\bin\Debug\net6.0\RideMaker.deps.json
+D:\c_sharp\RideMaker\bin\Debug\net6.0\RideMaker.runtimeconfig.json
+D:\c_sharp\RideMaker\bin\Debug\net6.0\RideMaker.dll
+D:\c_sharp\RideMaker\bin\Debug\net6.0\RideMaker.pdb
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.csproj.AssemblyReference.cache
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.AssemblyInfoInputs.cache
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.AssemblyInfo.cs
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.csproj.CoreCompileInputs.cache
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.dll
+D:\c_sharp\RideMaker\obj\Debug\net6.0\refint\RideMaker.dll
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.pdb
+D:\c_sharp\RideMaker\obj\Debug\net6.0\RideMaker.genruntimeconfig.cache
+D:\c_sharp\RideMaker\obj\Debug\net6.0\ref\RideMaker.dll

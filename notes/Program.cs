@@ -104,11 +104,30 @@
 //     Console.WriteLine(MyNums[i]);
 // }
 
-static void SayHello(string firstName = "buddy")
+// static void SayHello(string firstName = "buddy")
+// {
+//     Console.WriteLine($"Hey, {firstName}");
+// }
+// // We can call it without providing any arguments and the default value will be used...
+// SayHello();
+// // ...or we can call it with an argument and that argument's value will be used
+// SayHello("Yoda");
+
+// Console.WriteLine("Type something, then hit enter: ");
+// string InputLine = Console.ReadLine();
+// Console.WriteLine($"You wrote: {InputLine}");
+
+// Console.WriteLine("Type a number, then hit enter: ");
+// string NumberInput = Console.ReadLine();
+// Console.WriteLine(10 + NumberInput);
+
+Console.WriteLine("Type a number, then hit enter: ");
+string NumberInput = Console.ReadLine();
+// TryParse takes 2 parameters: the item to be parsed and a variable
+// you would like to output (out) to if it is successful
+if(Int32.TryParse(NumberInput, out int j))
 {
-    Console.WriteLine($"Hey, {firstName}");
+    // Notice how we used j instead of NumberInput
+    Console.WriteLine($"The integer was {j}");
+    Console.WriteLine(10 + j);
 }
-// We can call it without providing any arguments and the default value will be used...
-SayHello();
-// ...or we can call it with an argument and that argument's value will be used
-SayHello("Yoda");
