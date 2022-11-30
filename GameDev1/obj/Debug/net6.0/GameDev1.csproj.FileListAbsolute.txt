@@ -1,0 +1,15 @@
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.csproj.AssemblyReference.cache
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.AssemblyInfoInputs.cache
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.AssemblyInfo.cs
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.csproj.CoreCompileInputs.cache
+D:\c_sharp\GameDev1\bin\Debug\net6.0\GameDev1.exe
+D:\c_sharp\GameDev1\bin\Debug\net6.0\GameDev1.deps.json
+D:\c_sharp\GameDev1\bin\Debug\net6.0\GameDev1.runtimeconfig.json
+D:\c_sharp\GameDev1\bin\Debug\net6.0\GameDev1.dll
+D:\c_sharp\GameDev1\bin\Debug\net6.0\GameDev1.pdb
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.dll
+D:\c_sharp\GameDev1\obj\Debug\net6.0\refint\GameDev1.dll
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.pdb
+D:\c_sharp\GameDev1\obj\Debug\net6.0\GameDev1.genruntimeconfig.cache
+D:\c_sharp\GameDev1\obj\Debug\net6.0\ref\GameDev1.dll

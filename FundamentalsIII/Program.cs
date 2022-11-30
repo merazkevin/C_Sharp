@@ -67,24 +67,24 @@ numbers.Add(-4);
 
 // 5. Replace Negative Numbers with 0
 // Given an array of integers, return the array with all values below 0 replaced with 0.
-int[] numbersArray = new int[4] {-1, 2,-3, 4};
-static int[] NonNegatives(int[] IntArray)
-{
-    for(int ii=0; ii< IntArray.Length;ii++)
-    {
-        if(IntArray[ii]<0)
-        {
-            IntArray[ii] = 0;
-            Console.WriteLine(IntArray[ii]);
-        }
-        else
-        {
-            Console.WriteLine(IntArray[ii]);
-        }
-    }
-    return IntArray;
-}
-NonNegatives(numbersArray);
+// int[] numbersArray = new int[4] {-1, 2,-3, 4};
+// static int[] NonNegatives(int[] IntArray)
+// {
+//     for(int ii=0; ii< IntArray.Length;ii++)
+//     {
+//         if(IntArray[ii]<0)
+//         {
+//             IntArray[ii] = 0;
+//             Console.WriteLine(IntArray[ii]);
+//         }
+//         else
+//         {
+//             Console.WriteLine(IntArray[ii]);
+//         }
+//     }
+//     return IntArray;
+// }
+// NonNegatives(numbersArray);
 
 
 // 6. Print Dictionary
