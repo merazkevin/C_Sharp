@@ -1,0 +1,8 @@
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.csproj.AssemblyReference.cache
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.AssemblyInfoInputs.cache
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.AssemblyInfo.cs
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.csproj.CoreCompileInputs.cache
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.RazorAssemblyInfo.cache
+D:\c_sharp\firstWeb\obj\Debug\net6.0\firstWeb.RazorAssemblyInfo.cs

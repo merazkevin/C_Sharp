@@ -1,19 +1,23 @@
-﻿
+﻿// <=== Melee Fighters ===>
+MeleeFighter Interviewer = new MeleeFighter("Interviewer");
+// Interviewer.RandAttack();
+// Interviewer.Rage();
 
-Attack Logic = new Attack("logic", 30);
-Attack BehaviorQuest = new Attack("Behavior Question", 30);
-Attack RejectLetter = new Attack("Rejection Letter", 40);
+// <=== Ranged Fighters ===>
+RangedFighter  Kevin = new RangedFighter("Kevin");
+// Kevin.RandAttack();
+// Kevin.Dash();
+// Kevin.RandAttack();
+// Kevin.RangeAttack();
+
+
+// <=== Magic Caster ===>
+MagicCaster DarkSchneider = new MagicCaster("DarkSchneider");
+// DarkSchneider.RandAttack();
+DarkSchneider.HealSpell(Kevin);
 
 
 
 
-Enemy Interviewer = new Enemy("Interviewer", 100);
-Interviewer.Attacks.Add(Logic);
-Interviewer.Attacks.Add(BehaviorQuest);
-Interviewer.Attacks.Add(RejectLetter);
-Interviewer.RandAttack();
 
-// foreach(Attack  ii in attackList)
-// {
-//     Console.WriteLine(ii.Name);
-// }
+
