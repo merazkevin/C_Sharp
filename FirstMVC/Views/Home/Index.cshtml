@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Pet
+<div class="text-center">
+    <h1 class="display-4">Tell me about your pet</h1>
+    <form action="pet/create" method="post">
+    <div>
+        <label for="Name">Name</label>
+        <input type="text" name="Name">
+    </div>
+    <div>
+        <label for="Species">Species</label>
+        <input type="text" Species="Species">
+    </div>
+    <div>
+        <label for="IsFriendly">IsFriendly</label>
+        <input type="checkbox" name="IsFriendly">
+    </div>
+    <div>
+        <label for="IsFriendly">IsFriendly</label>
+        <input type="checkbox" name="IsFriendly">
+    </div>
+    </form>
+</div>

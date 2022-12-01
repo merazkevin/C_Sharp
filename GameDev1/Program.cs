@@ -5,7 +5,7 @@ MeleeFighter Interviewer = new MeleeFighter("Interviewer");
 
 // <=== Ranged Fighters ===>
 RangedFighter  Kevin = new RangedFighter("Kevin");
-// Kevin.RandAttack();
+Kevin.RandAttack();
 // Kevin.Dash();
 // Kevin.RandAttack();
 // Kevin.RangeAttack();

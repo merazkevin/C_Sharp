@@ -1,6 +1,6 @@
 class MagicCaster : Enemy
 {
-    public int Health = 80;
+
     public MagicCaster(string name) : base(name,80)
     {
         Attacks.Add(new Attack(" Burning Exodus", 25));
