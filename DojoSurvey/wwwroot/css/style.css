@@ -1,0 +1,50 @@
+.container{
+    background-color: lightgray;
+    color: white;
+    border: solid white 1px ;
+    box-sizing: content-box;
+    justify-content: center;
+    box-shadow: lightpink 2px 2px 2px ;
+    padding: 20px;
+    border-radius: 20px;
+}
+.navBar{
+display: flex;
+color: lightgray(20, 15, 15);
+text-shadow: lightpink 2px 2px 2px ;
+justify-content: center;
+}
+
+a{
+    color: #cd967a ;
+}
+
+.col-text{
+    color: #F9F2EF;
+    box-sizing: border-box;
+    width: 750 px;
+}
+.project-container{
+    background-color: #F9F2EF;
+    display: flex;
+    color: black;
+    width: 600px;
+    border: solid white 1px ;
+}
+.project-img{
+    margin: 20px;
+    width: 100px;
+}
+.dropshadow{
+    box-shadow: black 1px 2px 1px ;
+}
+.form-container{
+    background-color:#F9F2EF;
+    color: black;
+    width: 400px;
+    border: solid white 1px ;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: lightpink 2px 2px 2px ;
+    
+}

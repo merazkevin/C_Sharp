@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\c_sharp\\PorfolioI\\PorfolioI.csproj",
+  "FilePath": "d:\\c_sharp\\FirstMVC\\FirstMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,26 +16295,41 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "PorfolioI",
+  "RootNamespace": "FirstMVC",
   "Documents": [
     {
-      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Project\\Project.cshtml",
-      "TargetPath": "Views\\Project\\Project.cshtml",
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Index\\Index.cshtml",
-      "TargetPath": "Views\\Index\\Index.cshtml",
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Contact\\Contact.cshtml",
-      "TargetPath": "Views\\Contact\\Contact.cshtml",
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Food\\Food.cshtml",
-      "TargetPath": "Views\\Food\\Food.cshtml",
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\c_sharp\\FirstMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
