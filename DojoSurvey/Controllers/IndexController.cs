@@ -23,7 +23,11 @@ public class IndexController : Controller
         ViewBag.Name=Name;
         ViewBag.DojoLocation=DojoLocation;
         ViewBag.FavoriteLanguage=FavoriteLanguage;
-        ViewBag.Comment=Comment;
+        ViewBag.Comment = Comment;
+        if(ViewBag.Comment==null)
+        {
+            ViewBag.Comment="No Comment";
+        } 
         return View("FormInfo");
     }
 
@@ -38,10 +42,6 @@ public class IndexController : Controller
         string comment
     )
     {   
-        // if(name.Length<1)
-        // {
-        //     return string "sfad";
-        // }
         Name = name;
         DojoLocation = dojoLocation;
         FavoriteLanguage = favoriteLanguage;
