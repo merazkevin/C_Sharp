@@ -1,2 +1,44 @@
-
-<h1>This is my contact page!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<nav class="navBar">
+    <a href="/">Home |</a>
+    <a href="/project">Projects |</a>
+    <a href="contact">contact |</a>
+</nav>
+<body>
+    <div class="container">
+        <center class="container">
+            <h1>Contact me!</h1>
+            <div class="project-container">
+                <form action="">
+                    @* <=== name Input ===> *@
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name"><br><br>
+                    @* <=== Email Input ===> *@
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email"><br><br>
+                    @* <=== Message Input ===> *@
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="2"></textarea><br><br>
+                    <button>Add</button>
+                </form>
+            </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </center>
+    </div>
+</body>
+</html>

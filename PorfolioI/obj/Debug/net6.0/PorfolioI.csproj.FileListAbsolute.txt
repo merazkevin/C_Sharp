@@ -21,3 +21,4 @@ D:\c_sharp\PorfolioI\obj\Debug\net6.0\PorfolioI.genruntimeconfig.cache
 D:\c_sharp\PorfolioI\obj\Debug\net6.0\ref\PorfolioI.dll
 D:\c_sharp\PorfolioI\obj\Debug\net6.0\PorfolioI.RazorAssemblyInfo.cache
 D:\c_sharp\PorfolioI\obj\Debug\net6.0\PorfolioI.RazorAssemblyInfo.cs
+D:\c_sharp\PorfolioI\bin\Debug\net6.0\PorfolioI.staticwebassets.runtime.json
