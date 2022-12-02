@@ -1,0 +1,18 @@
+<div>
+    <h1>Here are some delicious foods!</h1>
+    @{
+        List<string> Food = new List<string>(){"cake","sushi","pizza", "bruschetta"};
+        foreach(string dish in Food)
+        {
+
+                @if(dish[0]=='p'|| dish[0]=='c')
+                {
+                    <p style="color: Red ;">@dish</p>
+                }
+                else
+                {
+                    <p>@dish</p>
+                }
+        }
+    }
+</div>

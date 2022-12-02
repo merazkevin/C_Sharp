@@ -14,3 +14,19 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\c_sharp\PorfolioI
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/c_sharp/PorfolioI/Views/Contact/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c_sharp/PorfolioI/Views/Food/Food.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxGb29kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c_sharp/PorfolioI/Views/Index/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c_sharp/PorfolioI/Views/Project/Project.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

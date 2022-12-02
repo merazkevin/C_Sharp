@@ -3,9 +3,9 @@ namespace PorfolioI.Controllers;
 
 public class ProjectController :Controller
 {
-    [HttpGet("projects")]
-    public string DisplayProjects()
+    [HttpGet("project")]
+    public ViewResult DisplayProjects()
     {
-        return "These are my Projects!";
+        return View ("Project");
     }
 }

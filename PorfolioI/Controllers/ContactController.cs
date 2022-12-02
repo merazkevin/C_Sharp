@@ -3,10 +3,10 @@ namespace PorfolioI.Controllers;
 
 public class Contact : Controller
 {
-    [HttpGet("Contacts")]
+    [HttpGet("contact")]
 
-    public string DisplayContact()
+    public ViewResult DisplayContact()
     {
-        return "This are all my Contacts";
+        return View("Contact");
     }
 }

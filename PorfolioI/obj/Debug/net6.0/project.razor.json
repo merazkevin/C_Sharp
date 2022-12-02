@@ -16296,6 +16296,27 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "PorfolioI",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Contact\\Contact.cshtml",
+      "TargetPath": "Views\\Contact\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Index\\Index.cshtml",
+      "TargetPath": "Views\\Index\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Project\\Project.cshtml",
+      "TargetPath": "Views\\Project\\Project.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\c_sharp\\PorfolioI\\Views\\Food\\Food.cshtml",
+      "TargetPath": "Views\\Food\\Food.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
