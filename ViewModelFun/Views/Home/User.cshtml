@@ -1,0 +1,15 @@
+@model UserModel
+
+<center>
+    <h1>Here is a User</h1>
+    <div >
+        <h3 class="text-danger">FirstName</h3>
+        @foreach(string name in Model.firstName){
+            <p > @name</p>
+        }
+        <h3 class="text-danger">LastName</h3>
+        @foreach(string lastName in Model.lastName){
+            <p >@lastName</p>
+        }
+    </div>
+</center>

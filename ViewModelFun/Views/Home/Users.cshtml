@@ -1,0 +1,13 @@
+<center>
+    <h1>Here is a User List</h1>
+    <div style="border:solid black 2px">
+        <h3 style="color:red">Names</h3>
+        @foreach(string name in Model.firstName){
+            <p>@name</p>
+        }
+        <h3 style="color:red">LastNames</h3>
+        @foreach(string name in Model.lastName){
+            <p>@name</p>
+        }
+    </div>
+</center>

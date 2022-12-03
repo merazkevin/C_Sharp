@@ -1,0 +1,11 @@
+@model NumArray
+<center>
+    <h1 >Here are some Numbers.</h1>
+    <div style="border:solid black 2px">
+        @foreach (int num in @Model.numArray)
+        {
+            <h3>@num</h3>
+            
+        }
+    </div>
+</center>
