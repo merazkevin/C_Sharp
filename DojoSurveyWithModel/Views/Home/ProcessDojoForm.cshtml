@@ -1,0 +1,14 @@
+@model DojoFormClass
+    <center>
+        <div class="border border-secondary">
+            <h2>Submitted Info</h2>
+            <p>@Model.name</p>
+            <p>@Model.dojoLocation</p>
+            <p>@Model.favoriteLanguage</p>
+            @if(Model.comment==null){
+                string newComment = "No Comment";
+                <p class="text-warning">@newComment</p>
+            }
+            <p>@Model.comment</p>
+        </div>
+    </center>

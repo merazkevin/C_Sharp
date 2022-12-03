@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <div >
+        <center class="form-container" >
+            <h2>Dojo Survey</h2>
+            <form action="ProcessDojoForm" method="post">
+                @* <=== Name input===> *@
+                <label for="name">Name</label>
+                <input type="text" name="name"><br><br>
+
+                @* <=== DojoLocation DropDown===> *@
+                <label for="dojoLocation">Dojo Location</label>
+                <select name="dojoLocation" id="dojoLocation">
+                    <option value="San Jose">San Jose</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="San Benito">San Benito</option>
+                </select><br><br>
+                
+                @* <=== FavoriteLanguage input ===> *@
+                <label for="favoriteLanguage">Favorite Language</label>
+                <select name="favoriteLanguage" id="">
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select><br><br>
+
+                @* <=== Comment Input ===> *@
+                <label for="comment">Comment(optional)</label><br>
+                <textarea name="comment" id="" cols="30" rows="10"></textarea><br><br>
+                <button>Submit</button>
+            </form>
+        </center>
+    </div>
+
+    
+</body>
+</html>
