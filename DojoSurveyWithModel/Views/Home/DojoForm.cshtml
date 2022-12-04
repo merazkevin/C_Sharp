@@ -1,41 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="~/css/style.css"/>
-</head>
+@model DojoFormClass
 <body>
     <div >
         <center class="form-container" >
             <h2>Dojo Survey</h2>
             <form action="ProcessDojoForm" method="post">
                 @* <=== Name input===> *@
-                <label for="name">Name</label>
-                <input type="text" name="name"><br><br>
+                <label asp-for="name"></label>
+                <input asp-for="name">
+                @* <=== Validation ==> *@
+                <div class="text-danger"><span asp-validation-for="name"></span></div>
+                <br><br>
 
                 @* <=== DojoLocation DropDown===> *@
-                <label for="dojoLocation">Dojo Location</label>
-                <select name="dojoLocation" id="dojoLocation">
+                <label asp-for="dojoLocation"></label>
+                <select asp-for="dojoLocation" >
+                    <option value="selec a location" disabled selected hidden>selec a location</option>
                     <option value="San Jose">San Jose</option>
                     <option value="San Francisco">San Francisco</option>
                     <option value="San Benito">San Benito</option>
-                </select><br><br>
-                
+                </select>
+                @* <=== Validation ==> *@
+                <div class="text-danger"><span asp-validation-for="dojoLocation"></span></div>
+                <br><br>
+
                 @* <=== FavoriteLanguage input ===> *@
-                <label for="favoriteLanguage">Favorite Language</label>
-                <select name="favoriteLanguage" id="">
+                <label asp-for="favoriteLanguage"></label>
+                <select asp-for="favoriteLanguage" >
+                    <option value="selec a one" disabled selected hidden>selec a option</option>
                     <option value="C#">C#</option>
                     <option value="Java">Java</option>
                     <option value="Python">Python</option>
-                </select><br><br>
+                </select>
+                @* <=== Validation ==> *@
+                <div class="text-danger"><span asp-validation-for="favoriteLanguage"></span></div>
+                <br><br>
 
                 @* <=== Comment Input ===> *@
-                <label for="comment">Comment(optional)</label><br>
-                <textarea name="comment" id="" cols="30" rows="10"></textarea><br><br>
+                <label asp-for="comment"></label><br>
+                <textarea asap-for="comment" cols="30" rows="10" placeholder="(optional)"></textarea><br><br>
                 <button>Submit</button>
+                @* <=== Validation ==> *@
+                <div class="text-danger"><span asp-validation-for="comment"></span></div>
+                <br><br>
             </form>
         </center>
     </div>

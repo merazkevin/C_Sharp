@@ -15,30 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = d:\c_sharp\DojoSurvey
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [d:/c_sharp/DojoSurvey/Views/Index/FormInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcRm9ybUluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,6 +23,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/c_sharp/DojoSurvey/ViewModelFun/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsRnVuXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = b-blz02xnmz2
+[d:/c_sharp/DojoSurvey/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

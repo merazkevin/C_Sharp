@@ -34,12 +34,28 @@ public class HomeController : Controller
         return View();
     }
 
+    //  <== OneDojoForm ==>
+    [HttpGet("ProcessDojoForm")]
+    public IActionResult ProcessDojoForm()
+    {
+        return View();
+    }
+
     //<=== Post Routes ===>
     //  <== DojoForm ==>
     [HttpPost("ProcessDojoForm")]
     public IActionResult ProcessDojoForm(DojoFormClass oneForm)
     {
-        return View(oneForm);
+        if(ModelState.IsValid)
+        {
+            Console.WriteLine("Validation Warning");
+            return View("ProcessDojoForm", oneForm);
+        }
+
+        else
+        {
+            return View("DojoForm");
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
