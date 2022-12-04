@@ -5,9 +5,10 @@
             <p>@Model.name</p>
             <p>@Model.dojoLocation</p>
             <p>@Model.favoriteLanguage</p>
+            <p>@Model.date</p>
             @if(Model.comment==null){
                 string newComment = "No Comment";
-                <p class="text-warning">@newComment</p>
+                <p class="text-danger">@newComment</p>
             }
             <p>@Model.comment</p>
         </div>

@@ -27,4 +27,11 @@ public class DojoFormClass
     [MaxLength(20, ErrorMessage ="Comment Must not exceed 20 characters")]
     // <=== FavoriteLanguage Field ===>
     public string? comment {get;set;}
+
+    // <=== date Validation ===>
+    [Required]
+    [DataType(DataType.Date)]
+    [FutureDate]
+    // <=== date Field ===>
+    public DateTime date {get;set;}
 } 
