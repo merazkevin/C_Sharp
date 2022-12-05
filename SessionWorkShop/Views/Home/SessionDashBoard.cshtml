@@ -1,0 +1,29 @@
+
+<div>
+    <div>
+        <h3>
+            Welcome  @Context.Session.GetString("UserName") 
+        </h3>
+        <form action="Logout">
+            <input type="submit" value="Logout"  class="btn btn-danger">
+        </form>
+        <hr>
+        <center>
+            <h3>@Context.Session.GetInt32("UserStartingNum")</h3>
+            <br>
+        <div>
+            <form action="StartingNumPlusOne" method="post">
+                <button type="submit" class="btn btn-warning btn-lg" value=@Context.Session.GetInt32("UserStartingNum") name="num">+1</button>
+            </form>
+            <form action="StartingNumMinusOne" method="post">
+                <button type="submit" class="btn btn-primary btn-lg" value=@Context.Session.GetInt32("UserStartingNum") name="num">-1</button>
+            </form>
+            <form action="StartingNumx2" method="post">
+                <button type="submit" class="btn btn-danger btn-lg" value=@Context.Session.GetInt32("UserStartingNum") name="num">x2</button>
+            </form>
+            <form action="PlusRandomNum" method="post">
+                <button type="submit" class="btn btn-success" value=@Context.Session.GetInt32("UserStartingNum") name="num">+Random</button>
+            </form>
+        </center>
+    </div>
+</div>

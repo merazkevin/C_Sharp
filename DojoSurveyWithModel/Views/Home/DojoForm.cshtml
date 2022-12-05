@@ -1,6 +1,6 @@
 @model DojoFormClass
 <body>
-    <div >
+    <div class="border border-dark">
         <center class="form-container" >
             <h2>Dojo Survey</h2>
             <form action="ProcessDojoForm" method="post">
@@ -41,6 +41,13 @@
                 @* <=== Validation ==> *@
                 <div class="text-danger"><span asp-validation-for="date"></span></div>
                 <br><br>
+
+                @* <=== oddNumber Input ===> *@
+                @* <label asp-for="oddNumber"></label><br>
+                <input asp-for="oddNumber"></input><br><br> *@
+                @* <=== Validation ==> *@
+                @* <div class="text-danger"><span asp-validation-for="oddNumber"></span></div> *@
+                @* <br><br> *@
 
                 @* <=== Comment Input ===> *@
                 <label asp-for="comment"></label><br>
