@@ -1,0 +1,164 @@
+Full CRUD instructions:
+
+1-dotnet new mvc --no-https -o ProjectName
+    *Remember it's still important to use the 
+    --no-https flag to prevent any conflicts 
+    with adding security features!*
+
+2-dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+
+3-dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+    You can verify that the installations worked by looking at your ProjectName.csproj file. 
+    You will see the packages listed there. This file is where we keep track of all the different
+    packages and needs of our project.
+
+4-create model/s.
+    key things in mind:
+        -The name you give your model should be a singular name (i.e. User instead of Users). 
+        We will pluralize it for our database later.
+        -The names you give to your properties will be the names of your columns in the database.
+        -All names should follow PascalCasing standards (CapitalFirstLetter)
+        We will be using an auto-incremented integer ID for each model which we need to specify (see the example below).
+        -Since this is going into a database, best practices state we should add CreatedAt and UpdatedAt properties to all models.
+    *=> Model should have:
+                1. imports needed:
+                    #pragma warning disable CS8618(turns off null warnings** not needed if u use "?")
+                    using System.ComponentModel.DataAnnotations;
+                    namespace YourProjectName.Models;(dont forget to change your namspace)
+                2.[Key]-The key name MUST be the named exact.
+                3.properties/fields-Must be public and set to {get;set;}
+                4.create public DateTime CreatedAt { get; set; } = DateTime.Now;
+                5.public DateTime UpdatedAt { get; set; } = DateTime.Now;
+                6.Add Validation on fields(custom/presets).
+
+    Model Example:
+
+    #pragma warning disable CS8618
+    using System.ComponentModel.DataAnnotations;
+    namespace YourProjectName.Models;
+
+    public class Monster
+    {
+        [Key]
+        public int MonsterId { get; set; }
+        public string Name { get; set; } 
+        public int Height { get; set; }
+        public string Description { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+    }
+
+5-create ContextClass/Model inside Models folder.
+    file should be call MyContext.cs.
+    ContextClass example:
+
+    #pragma warning disable CS8618
+    // We can disable our warnings safely because we know the framework will assign non-null values 
+    // when it constructs this class for us.
+    using Microsoft.EntityFrameworkCore;
+    namespace YourProjectName.Models;
+    // the MyContext class represents a session with our MySQL database, allowing us to query for or save data
+    // DbContext is a class that comes from EntityFramework, we want to inherit its features
+    public class MyContext : DbContext 
+    {   
+        // This line will always be here. It is what constructs our context upon initialization  
+        public MyContext(DbContextOptions options) : base(options) { }    
+        // We need to create a new DbSet<Model> for every model in our project that is making a table
+        // The name of our table in our database will be based on the name we provide here
+        // This is where we provide a plural version of our model to fit table naming standards    
+        public DbSet<Monster> Monsters { get; set; } 
+    } 
+
+6-In appsettings.json paste code below to add the connectoionString :
+    {  
+        "Logging": {    
+            "LogLevel": {      
+                "Default": "Information",      
+                "Microsoft.AspNetCore": "Warning"    
+            }  
+        },  
+        "AllowedHosts": "*",    
+        "ConnectionStrings":    
+        {        
+            "DefaultConnection": "Server=localhost;port=3306;userid=root;password=root;database=monsterdb;"    
+        }
+    }
+    We will need to make some adjustments to the DefaultConnection depending on your personal settings:
+
+    Update userid to your userid for MySQL.
+    Update password to your password to MySQL. You can verify what this password is by logging in to Workbench. If 
+    you have taken courses with us previously that use MySQL, you likely set up this password to be "root", but it is 
+    good to check.
+    Update database to be a unique name for your project. You must ALWAYS do this. This will be the name of your 
+    database in MySQL. If you leave it at a default name when the time comes to migrate it will add your tables to an 
+    existing database. That could cause some major problems! Be sure to change this every time you start a project.
+    Optional: If for whatever reason you had to change the port MySQL runs on (by default it is 3306) then update 
+    that as well. If you are unsure if this has happened to you, it is unlikely it has changed.
+
+7-Add code into Program.cs file:
+    // Add this using statement
+    using Microsoft.EntityFrameworkCore;
+    // You will need access to your models for your context file
+    using ProjectName.Models;
+    // Builder code from before
+    var builder = WebApplication.CreateBuilder(args)
+    // Create a variable to hold your connection string
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    // All your builder.services go here
+    // And we will add one more service
+    // Make sure this is BEFORE var app = builder.Build()!!
+    builder.Services.AddDbContext<MyContext>(options =>
+    {
+        options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+    });
+    // The rest of the code below
+
+8-Add Migrations:
+    dotnet ef migrations add FirstMigration
+
+    *Note: 
+        FirstMigration is a chosen name. This can be anything.
+        However, after you use this name, you cannot use it again when making migrations for the same project. 
+        A good rule of thumb is to call your first migration FirstMigration, then if you need to make a second migration
+        for some reason call it SecondMigration. If you need to make a third, call it ThirdMigration, and so on and so
+        forth...
+
+9-Apply to database:
+    dotnet ef database update.
+    Troubleshooting: dotnet ef migrations add FirstMigration -v
+        Sometimes you will try to run your migrations and will hit an error message that your build failed.
+        This happens when something is wrong with your code somewhere.
+        (dotnet ef migrations add FirstMigration -v)-This will trigger verbose mode. 
+        Verbose mode goes into detail on what steps are happening to create your migrations.
+        It will also provide detailed information about what went wrong in your migration by listing the number of
+        errors it encountered and details on what those errors are. 
+        
+10-Set up Controller:
+    // Using statements
+    using System.Diagnostics;
+    using Microsoft.AspNetCore.Mvc;
+    using YourProjectName.Models;
+    namespace YourProjectName.Controllers;    
+    public class HomeController : Controller
+    {    
+        private readonly ILogger<HomeController> _logger;
+        // Add a private variable of type MyContext (or whatever you named your context file)
+        private MyContext _context;         
+        // Here we can "inject" our context service into the constructor 
+        // The "logger" was something that was already in our code, we're just adding around it   
+        public HomeController(ILogger<HomeController> logger, MyContext context)    
+        {        
+            _logger = logger;
+            // When our HomeController is instantiated, it will fill in _context with context
+            // Remember that when context is initialized, it brings in everything we need from DbContext
+            // which comes from Entity Framework Core
+            _context = context;    
+        }         
+        [HttpGet("")]    
+        public IActionResult Index()    
+        {     
+            // Now any time we want to access our database we use _context   
+            List<Monster> AllMonsters = _context.Monsters.ToList();
+            return View();    
+        } 
+    }
