@@ -67,9 +67,8 @@ public class HomeController : Controller
     [HttpPost("StartingNumPlusOne")]
     public IActionResult StartingNumPlusOne(int num)
     {
-        
         HttpContext.Session.SetInt32("UserStartingNum", num +1);
-        HttpContext.Session.GetInt32("UserStartingNum");
+        // HttpContext.Session.GetInt32("UserStartingNum");
         return RedirectToAction("SessionDashBoard");
     }
 

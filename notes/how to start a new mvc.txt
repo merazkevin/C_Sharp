@@ -1,0 +1,2 @@
+1-in terminal in root file
+    dotnet new mvc --no-https -o (here goes your project name)

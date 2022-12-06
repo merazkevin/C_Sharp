@@ -1,0 +1,15 @@
+D:\c_sharp\LinqEruption\bin\Debug\net6.0\LinqEruption.exe
+D:\c_sharp\LinqEruption\bin\Debug\net6.0\LinqEruption.deps.json
+D:\c_sharp\LinqEruption\bin\Debug\net6.0\LinqEruption.runtimeconfig.json
+D:\c_sharp\LinqEruption\bin\Debug\net6.0\LinqEruption.dll
+D:\c_sharp\LinqEruption\bin\Debug\net6.0\LinqEruption.pdb
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.csproj.AssemblyReference.cache
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.GeneratedMSBuildEditorConfig.editorconfig
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.AssemblyInfoInputs.cache
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.AssemblyInfo.cs
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.csproj.CoreCompileInputs.cache
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.dll
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\refint\LinqEruption.dll
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.pdb
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\LinqEruption.genruntimeconfig.cache
+D:\c_sharp\LinqEruption\obj\Debug\net6.0\ref\LinqEruption.dll
