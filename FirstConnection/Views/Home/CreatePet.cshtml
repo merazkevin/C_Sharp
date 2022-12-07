@@ -1,0 +1,33 @@
+@model Pet
+<div class="mb-3">
+    <center>
+        <form asp-action="ProcessCreatePet" method="post">
+            <h1>Create Pet</h1>
+            <hr>
+            @* <=== name ===> *@
+            <label asp-for="Name"></label>
+            <input asp-for="Name" type="text"><br><br>
+            @* <=== Type ===> *@
+            <label asp-for="Type"></label>
+            <select asp-for="Type" type="text"
+            class="btn btn-outline-secondary dropdown-toggle" 
+            type="button" data-bs-toggle="dropdown" 
+            aria-expanded="false">
+                <option disabled selected hidden>Select Pet</option>
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Snake">Snake</option>
+                <option value="Turtle">Turtle</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            @* <=== Age ===> *@
+            <label asp-for="Age"></label>
+            <input asp-for="Age" type="text"><br><br>
+            @* <=== HasFur ===> *@
+            <label asp-for="HasFur"></label>
+            <input asp-for="HasFur" type="checkbox"><br><br>
+            <button class="btn btn-primary">Create Pet</button>
+        </form>
+    </center>
+</div>

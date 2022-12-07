@@ -1,0 +1,24 @@
+@model List<Pet>
+
+    <div>
+        <center>
+            <h1>All Pets</h1>
+        </center>
+        @foreach (Pet onePet in Model)
+        {
+            <div>
+                <center>
+                <h4 class="text-primary">@onePet.Name</h4>
+                </center>
+                <ul class="list-group">
+                    <li class="list-group-item">Name: @onePet.Name</li>
+                    <li class="list-group-item">Type: @onePet.Type</li>
+                    <li class="list-group-item">Age: @onePet.Age</li>
+                    <li class="list-group-item">HasFur: @onePet.HasFur</li>
+                </ul>
+                <hr>
+            </div>
+            
+            
+        }
+    </div>

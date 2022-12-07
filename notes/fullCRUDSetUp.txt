@@ -124,7 +124,7 @@ Full CRUD instructions:
         forth...
 
 9-Apply to database:
-    dotnet ef database update.
+    dotnet ef database update
     Troubleshooting: dotnet ef migrations add FirstMigration -v
         Sometimes you will try to run your migrations and will hit an error message that your build failed.
         This happens when something is wrong with your code somewhere.

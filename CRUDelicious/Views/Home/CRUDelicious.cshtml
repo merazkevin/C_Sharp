@@ -1,0 +1,18 @@
+@model List<Dish>
+<header>
+    <center>
+        <h1> Welcome To CRUDelicious</h1>
+    </center>
+</header><br>
+<body>
+    <center>
+        <h5>Check Out Some Recent Dishes!</h5>
+    </center>
+    <hr>
+        @foreach(Dish oneDish in Model)
+        {
+            <p><a asp-controller="Home" asp-action="Display" asp-route-DishId="@oneDish.DishId"> @oneDish.Name</a>
+                by: @oneDish.Chef</p>
+        }
+        
+</body>

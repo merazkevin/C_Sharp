@@ -15,12 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\c_sharp\FirstConnection
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/c_sharp/FirstConnection/Views/Home/CreatePet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVQZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c_sharp/FirstConnection/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/c_sharp/FirstConnection/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c_sharp/FirstConnection/Views/Home/ShowPets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93UGV0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/c_sharp/FirstConnection/Views/Shared/Error.cshtml]

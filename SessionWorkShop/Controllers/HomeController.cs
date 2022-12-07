@@ -13,7 +13,8 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-// <=== GetRoutes ===>*<=== GetRoutes ===>*<=== GetRoutes ===>
+
+    // <=== GetRoutes ===>
     public IActionResult Index()
     {
         return View();
@@ -53,8 +54,7 @@ public class HomeController : Controller
         return View("SessionWorkshopLogin");
     }
 
-
-// <=== PostRoutes ===>*<=== PostRoutes ===>*<=== PostRoutes ===>
+    // <=== PostRoutes ===>*
     [HttpPost("ProcessSessionDashBoard")]
     public IActionResult ProcessSessionDashBoard(string name)
     {
@@ -67,7 +67,8 @@ public class HomeController : Controller
     [HttpPost("StartingNumPlusOne")]
     public IActionResult StartingNumPlusOne(int num)
     {
-        HttpContext.Session.SetInt32("UserStartingNum", num +1);
+        int? SessionNum= HttpContext.Session.GetInt32("UserStartingNum");
+        HttpContext.Session.SetInt32("UserStartingNum", (int)SessionNum +1);
         // HttpContext.Session.GetInt32("UserStartingNum");
         return RedirectToAction("SessionDashBoard");
     }

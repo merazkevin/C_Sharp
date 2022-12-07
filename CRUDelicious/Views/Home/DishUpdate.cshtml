@@ -1,0 +1,30 @@
+@model Dish
+<div >
+    <div >
+        <form asp-controller="Home" asp-action="ProcessDishUpdate"  asp-route-dishId="@Model.DishId" method="post">           
+            @* Chef *@
+            <label asp-for="Chef" class="form-label"></label>
+            <input asp-for="Chef" class="form-control" type="text"><br><br>
+            @* Name *@
+            <label asp-for="Name" class="form-label"></label><br><br>
+            <input asp-for="Name" class="form-control" type="text"><br><br>
+            @* Calories *@
+            <label asp-for="Calories" class="form-label"></label><br><br>
+            <input asp-for="Calories" class="form-control" type="number"><br><br>
+            @* Tastiness *@
+            <label asp-for="Tastiness" ></label><br><br>
+            <select asp-for="Tastiness">
+                <option disabled selected hidden>select one</option>
+                <option  value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+            @* Calories *@
+            <label asp-for="Description" class="form-label"></label><br><br>
+            <textarea asp-for="Description" cols="30" rows="10"></textarea><br><br>
+            <button>Add Dish</button>
+        </form>
+    </div>
+</div>
