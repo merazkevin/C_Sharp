@@ -1,18 +1,18 @@
-@model LogUser
+@model LogUser @* ! <====== change if needed  *@
 
 <div class="d-flex text-center justify-content-around">
-    <div class="d-flex text-center justify-content-around">
     <form asp-controller='Home' asp-action="LoginUser" method="post">
         <h3> Login </h3><hr><br>
         @* name *@
         <label asp-for="LEmail">Email</label>
-        <input asp-for="LEmail" type="text" class="form-control"><br><br>
-        <span asp-validation-for="LEmail" class="text-danger"></span>
+        <input asp-for="LEmail" class="form-control"><br><br>
         @* Password *@
         <label asp-for="LPassword">Password</label>
-        <input asp-for="LPassword" type="text" class="form-control"><br><br>
-        <p><span asp-validation-for="LPassword" class="text-danger"></span></p>
+        <input asp-for="LPassword" class="form-control"><br><br>
+        @* <p><span asp-validation-for="LEmail" class="text-danger"></span></p> *@
         @* Button *@
         <input type="submit" value="Login" class="btn btn-primary" class="form-control">
     </form>
 </div>
+        @* validation *@
+        <span asp-validation-for="LEmail" class="text-danger">Invalid Password/Email</span>

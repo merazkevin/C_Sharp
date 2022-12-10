@@ -1,0 +1,69 @@
+1.follow the FullCrudSetUp steps to set up your back end and model/s. 
+    Example of the User class: snipped prefix=> UC
+2.create 2 partials 
+    -Registration form snipped prefix=> RF
+    -Loging form  snipped prefix=> LIF
+3.add partials into your Index page
+    Example:
+        @await Html.PartialAsync("_PARTIALNAME")
+4. Add controller:
+    imports:
+        using Microsoft.AspNetCore.Identity;
+        using Microsoft.AspNetCore.Mvc.Filters;
+5.create 2 post routes:
+    1.[HttpPost("users/create")]
+        createUsers():
+                //Hash pass
+                PasswordHasher<User> Hasher =new PasswordHasher<User>();
+                newUser.Password=Hasher.HashPassword(newUser, newUser.Password);
+                _context.Add(newUser);===>adds user to the Db
+                _context.SaveChanges();===> updates Db
+                HttpContext.Session.SetInt32("UserId", newUser.UserId);===> sets a key of "UserId" to sessions 
+        *==>        important*=>make sure to check for if the right services hace been imported into program.cs
+                        before=>var connectionString = builder.Configuration.......
+                        builder.Services.AddControllersWithViews();
+                        builder.Services.AddHttpContextAccessor();  
+                        builder.Services.AddSession();
+                        builder.Services.AddDbContext<MyContext>(options =>
+                        {
+                            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+                        });
+                        app.UseSession(); BEFORE=> app.MapControllerRoute();
+            
+      2.[HttpPost("users/login")]
+        public IActionResult LoginUsers(LogUser loginUser)
+            User? userInDb = _context.Users.FirstOrDefault(u=>u.Email==loginUser.LEmail);=> Get users from db
+            if(userInDb==null)=>Check is its empty
+                {
+                    ModelState.AddModelError("LEmail","Invalid Email/Password");
+                    return View("Index");
+                }
+                PasswordHasher<LogUser> hasher = new PasswordHasher<LogUser>(); => to use hasher  
+                var result = hasher.VerifyHashedPassword(loginUser, userInDb.Password, loginUser.LPassword); to verify hash
+                if(result==0)=>checkingif its empty
+                {
+                    ModelState.AddModelError("LEmail","Invalid Email/Password");=>making new error to display
+                    return View("Index");
+                }
+                else
+                {
+                    HttpContext.Session.SetInt32("UserId", userInDb.UserId); => setting UserId into session
+                    return RedirectToAction("Success");
+                }
+
+6.create 1 get route:
+    - [HttpGet("success")]
+      method==> Success(){}
+7.create view file for success.     
+8.check if validations worked
+9.check if db is connected and storing information
+10.check if Loguser info is being retrived from db. Check for bugs!
+*Debugging help code:
+    IEnumerable<string> errors = ModelState.ToDictionary(kvp => kvp.Key, kvp => kvp.Value)
+                          .Select(e => String.Join(" ", e.Value.Errors.Select(x => x.ErrorMessage)));
+    foreach (string item in errors)
+    {
+        Console.WriteLine(item);
+    }
+
+

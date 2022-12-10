@@ -1,0 +1,26 @@
+@model List<Dish>
+<div>
+    <h3>Yumm! Check Out Our Tasty Dishes</h3>
+    <hr><br>
+    <table class="table table-striped-columns">
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+        </tr>
+        @foreach (Dish item in Model)
+        {
+            <tr>
+                <td>@item.DishName</td>
+                <td>@item.DishCreator.FirstName @item.DishCreator.LastName</td>
+                <td>@item.Tastiness</td>
+                <td>@item.Calories</td>
+            </tr>
+            <p>
+                
+            </p>
+        }
+        
+    </table>
+</div>

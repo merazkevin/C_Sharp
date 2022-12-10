@@ -1,0 +1,22 @@
+@model LogUser
+
+<div class="d-flex text-center justify-content-around">
+    <form asp-controller='Home' asp-action="LoginUsers" method="post">
+        <h3> Login </h3><hr><br>
+        @* name *@
+        <label asp-for="LEmail">Email</label>
+        <input asp-for="LEmail" type="text" class="form-control"><br><br>
+        @* Password *@
+        <label asp-for="LPassword">Password</label>
+        <input asp-for="LPassword" type="text" class="form-control"><br><br>
+        @* Button *@
+        <input type="submit" value="Login" class="btn btn-primary" class="form-control">
+    </form>
+</div>
+<br>
+<div>
+    <span asp-validation-for="LPassword" class="text-danger"></span>
+</div>
+<div>
+    <span asp-validation-for="LEmail" class="text-danger"></span>
+</div>

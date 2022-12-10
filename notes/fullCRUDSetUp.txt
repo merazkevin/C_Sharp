@@ -48,7 +48,7 @@ Full CRUD instructions:
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
 
-5-create ContextClass/Model inside Models folder.
+5-create ContextClass/Model inside Models folder.(MCV)//!<=== SnippetPrefix
     file should be call MyContext.cs.
     ContextClass example:
 
@@ -63,7 +63,7 @@ Full CRUD instructions:
     {   
         // This line will always be here. It is what constructs our context upon initialization  
         public MyContext(DbContextOptions options) : base(options) { }    
-        // We need to create a new DbSet<Model> for every model in our project that is making a table
+        // We need to create a new DbSet<Model> FOR EVERY MODEL in our project that is making a table
         // The name of our table in our database will be based on the name we provide here
         // This is where we provide a plural version of our model to fit table naming standards    
         public DbSet<Monster> Monsters { get; set; } 
@@ -79,7 +79,7 @@ Full CRUD instructions:
         },  
         "AllowedHosts": "*",    
         "ConnectionStrings":    
-        {        
+        {                             //TODO<=== CHANGE THIS DATABASE NAME===>>>>
             "DefaultConnection": "Server=localhost;port=3306;userid=root;password=root;database=monsterdb;"    
         }
     }

@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace LoginAndReg.Models;
+namespace LoginAndReg.Models; 
 
 public class LogUser
 {
