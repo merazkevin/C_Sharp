@@ -1,0 +1,14 @@
+@model Category
+<div>
+    <h3>New Category</h3>
+    <form asp-controller="Category" asp-action="CreateCategory" method="post">
+        @* Name *@
+        <label asp-for="Name"></label>
+        <input asp-for="Name"><br><br>
+        @* <input asp-for="Name" value="@Model.CategoryId" type="hidden"> *@
+        @* Validation *@
+        <p><span asp-validation-for="Name" asp-controller="Category"></span></p>
+        @* button *@
+        <button>Create</button>
+    </form>
+</div>

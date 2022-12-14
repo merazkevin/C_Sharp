@@ -1,0 +1,9 @@
+@model CategoryViews
+<div class="text-center" >
+    @await Html.PartialAsync("_NavBar")
+</div>
+<hr><br><br>
+<div class="d-flex text center justify-content-around" class="m-3">
+    @await Html.PartialAsync("_CategoriesForm", Model.Category)
+    @await Html.PartialAsync("_AllCategories", Model.Categories)
+</div>

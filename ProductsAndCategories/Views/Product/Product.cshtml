@@ -1,0 +1,9 @@
+@model ProductViews
+<div class="text-center" >
+    @await Html.PartialAsync("_NavBar")
+</div>
+<hr><br>
+<div class="d-flex text center justify-content-around" class="m-3">
+    @await Html.PartialAsync("_NewProductForm", Model.Product)
+    @await Html.PartialAsync("_AllProducts", Model.Products)
+</div>

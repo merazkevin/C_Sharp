@@ -1,0 +1,36 @@
+@model CategoryViews
+
+
+<div class="" ><br>
+    <center>
+        @* <=== Navbar ===> *@
+        @await Html.PartialAsync("_NavBar")<hr>
+    </center>
+</div><br>
+<div class="text-center">
+    <h3>@Model.Category.Name</h3>
+</div>
+<div class="d-flex justify-content-around">
+    <div>
+        @{
+            Model.Association = new Association()
+            {
+                CategoryId = Model.Category.CategoryId
+            };
+        }
+        <table>
+            <tr>
+                <th>Products</th>
+            </tr>
+            @foreach (Association item in Model.Category.Associations)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div>
+        @await Html.PartialAsync("_AddProductToCategory", Model)<br>
+    </div>
+</div>

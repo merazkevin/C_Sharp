@@ -1,0 +1,17 @@
+*Debugging help code:
+    IEnumerable<string> errors = ModelState.ToDictionary(kvp => kvp.Key, kvp => kvp.Value)
+                          .Select(e => String.Join(" ", e.Value.Errors.Select(x => x.ErrorMessage)));
+    foreach (string item in errors)
+    {
+        Console.WriteLine(item);
+    }
+    
+    foreach (KeyValuePair<string, ModelStateEntry> error in ModelState)
+        {
+            Console.WriteLine("********** ERROR ********");
+            Console.WriteLine($"Field: {error.Key}");
+            foreach (ModelError err in error.Value.Errors)
+            {
+                Console.WriteLine($"Error: {err.ErrorMessage}");
+            }
+        }

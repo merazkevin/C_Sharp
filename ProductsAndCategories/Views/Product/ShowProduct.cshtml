@@ -1,0 +1,32 @@
+@model ProductViews
+
+    <center>
+        @await Html.PartialAsync("_NavBar")
+        <hr><br>
+        <h3>@Model.Product.Name</h3>
+    </center><br><br>
+
+<div class="d-flex justify-content-around">
+    
+    @{
+        Model.Association = new Association()
+        {
+            ProductId = Model.Product.ProductId
+        };
+    }
+    
+        <table>
+            <tr>
+                <th>Categories Added</th>
+            </tr>
+                @foreach (Association item in Model.Product.Associations)
+                {
+                    <tr>
+                        <td>@item.Category.Name</td>
+                    </tr>
+                }
+        </table>
+    <div>
+        @await Html.PartialAsync("_AddCategoryToProduct", Model)<br>
+    </div>
+</div>
