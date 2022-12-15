@@ -1,0 +1,9 @@
+@model ViewModel
+
+<div>
+    <h3>Guests:</h3>
+    @foreach (Rsvp item in Model.Rsvps)
+    {
+        <p>@Model.User.FirstName</p>
+    }
+</div>

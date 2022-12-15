@@ -32,24 +32,28 @@
             
       2.[HttpPost("users/login")]
         public IActionResult LoginUsers(LogUser loginUser)
-            User? userInDb = _context.Users.FirstOrDefault(u=>u.Email==loginUser.LEmail);=> Get users from db
-            if(userInDb==null)=>Check is its empty
-                {
-                    ModelState.AddModelError("LEmail","Invalid Email/Password");
-                    return View("Index");
-                }
-                PasswordHasher<LogUser> hasher = new PasswordHasher<LogUser>(); => to use hasher  
-                var result = hasher.VerifyHashedPassword(loginUser, userInDb.Password, loginUser.LPassword); to verify hash
-                if(result==0)=>checkingif its empty
-                {
-                    ModelState.AddModelError("LEmail","Invalid Email/Password");=>making new error to display
-                    return View("Index");
-                }
-                else
-                {
-                    HttpContext.Session.SetInt32("UserId", userInDb.UserId); => setting UserId into session
-                    return RedirectToAction("Success");
-                }
+            [HttpPost("users/login")]
+    public IActionResult LoginUsers(LogUser loginUser)
+    {
+        User? userInDb = _context.Users.FirstOrDefault(u => u.Email == loginUser.LEmail);
+        if (userInDb == null)
+        {
+            ModelState.AddModelError("LEmail", "Invalid Email/Password");
+            return View("Index");
+        }
+        PasswordHasher<LogUser> hasher = new PasswordHasher<LogUser>();
+        var result = hasher.VerifyHashedPassword(loginUser, userInDb.Password, loginUser.LPassword);
+        if (result == 0)
+        {
+            ModelState.AddModelError("LEmail", "Invalid Email/Password");
+            return View("Index");
+        }
+        else
+        {
+            HttpContext.Session.SetInt32("UserId", userInDb.UserId);
+            return RedirectToAction("Success");
+        }
+    }
 
 6.create 1 get route:
     - [HttpGet("success")]

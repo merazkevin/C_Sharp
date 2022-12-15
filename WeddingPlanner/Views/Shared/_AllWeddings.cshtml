@@ -1,0 +1,50 @@
+@model ViewModel
+<table class="table table-striped">
+    <tr>
+        <th>Wedding Of</th>
+        <th>Date</th>
+        <th>Guest Count</th>
+        <th>Action</th>
+    </tr>
+        @foreach (Wedding item in Model.Weddings)
+        {
+            <tr>
+                <td><a asp-action="OneWedding" asp-controller="Wedding" asp-route-weddingId="@item.WeddingId">@item.WedderOne & @item.WedderTwo </a></td>
+                <td>@item.Date</td>
+                <td>@item.Rsvps.Count</td>
+                
+                @{
+                    int? userId=Context.Session.GetInt32("UserId");
+                    }
+                @if(item.User.UserId==userId)
+                {
+                    <td>
+                        <form  asp-action="DestroyWedding" asp-controller="Wedding" asp-route-weddingId=@item.WeddingId>
+                            <button class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                }
+                else
+                {
+                    if(item.Rsvps.Any(e=>e.UserId==item.UserId)==true)
+                    {
+                        <td>
+                            <form  asp-action="DestroyRsvp" asp-controller="Rsvp" asp-route-weddingId=@item.WeddingId asp-route-UserId=@item.UserId>
+                                <button class="btn btn-danger">Un-Rsvp</button>
+                            </form>
+                        </td>
+                        
+                    }
+                    else
+                    {
+                        <td>
+                            <form  asp-action="CreateRsvp" asp-controller="Rsvp" asp-route-weddingId=@item.WeddingId asp-route-UserId=@item.UserId>
+                                <button class="btn btn-warning">Rsvp</button>
+                            </form>
+                        </td>
+                    }
+                }
+            </tr>
+            }
+
+</table>

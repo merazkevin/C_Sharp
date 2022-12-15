@@ -1,0 +1,14 @@
+@model ViewModel
+<div>
+    <br>
+    <div class="d-flex justify-content-around">
+        <h3>Welcome @ViewBag.Name !</h3>
+        @* navbar partial *@
+        @await Html.PartialAsync("_navbar")
+    </div>
+    <hr>
+    @*  AllWeddings *@
+    <div>
+        @await Html.PartialAsync("_AllWeddings", @Model)
+    </div>
+</div>

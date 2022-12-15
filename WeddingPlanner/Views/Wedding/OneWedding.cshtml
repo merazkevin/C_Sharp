@@ -1,0 +1,25 @@
+@model ViewModel
+
+<br>
+    <div class="d-flex justify-content-around">
+        <h3>Welcome @ViewBag.Name !</h3>
+        @await Html.PartialAsync("_navbar")
+    </div>
+    <hr>
+
+    <div>
+        <h1>@Model.Wedding.WedderOne & @Model.Wedding.WedderTwo </h1>
+        <p>@Model.Wedding.Date</p>
+        <p class="border"><b> Wedding Guests:  @Model.Wedding.Rsvps.Count</b></p>
+        @foreach (Rsvp item in @Model.Wedding.Rsvps)
+        {   
+            if(@item.User.FirstName==null)
+            {
+                <p>No Guest Rsvpd</p>
+            }
+            else
+            {
+                <p class="border">@item.User.FirstName</p>
+            }
+        }
+    </div>
